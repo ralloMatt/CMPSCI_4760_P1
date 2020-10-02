@@ -23,3 +23,24 @@ my_prog: Error: Detailed error message
 where my_prog is actually the name of the executable (argv[0]) that you are trying to execute. This should not be
 hardcoded, so no matter what the executable name is, it will output the correct result. This is necessary so that later on
 when we are working with multiple executables it is easier to find where the problem is.
+
+Overview:
+	To compile simply type "make" and hit enter. The Makefile creates an executable called
+	"./ass1" so when running the project type ./ass1 -<option>. My program uses getopt and 
+	perror. But when using the option "-n" it takes three integers because of exercise 3.8.
+	Those integers are n, k, m which is for number of processes, loops, sleep time. All my
+	 answers to exercise 3.8 are in the file "Answers." I used local git version control.
+
+Version Control:
+	I used local git version control. The repository is in a hidden folder called ./git inside 
+		my project folder. To see commits type "git log" and hit enter. 
+
+	 
+Files used:	
+	Makefile - compiles everything and creates executable ./ass1. Also removes objects files 
+		when "make clean" is used.
+	main.c - includes simplechain.c (or program 3.1) and uses getopt as well as perror.
+	
+	
+
+	
