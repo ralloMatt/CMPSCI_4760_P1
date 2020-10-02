@@ -21,4 +21,5 @@ task. Test and ensure that these work.
 error message itself should be:
 my_prog: Error: Detailed error message
 where my_prog is actually the name of the executable (argv[0]) that you are trying to execute. This should not be
-hardcoded, so no matter what the executable name is, it will output the correct result. This i
+hardcoded, so no matter what the executable name is, it will output the correct result. This is necessary so that later on
+when we are working with multiple executables it is easier to find where the problem is.
